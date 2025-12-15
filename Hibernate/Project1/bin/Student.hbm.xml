@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "Mypack.Student" table = "stud">
+      <id name="rollno">
+      <generator class="assigned"></generator>
+      </id>
+    
+    <property name="name"></property>
+    <property name="city"></property>
+   </class>
+</hibernate-mapping>

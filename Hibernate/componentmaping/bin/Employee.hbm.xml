@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+<class name="mypack.Employee" table="emp">
+<id name="empid">
+<generator class="increment"></generator>
+</id>
+
+<property name="empname" column="name"></property>
+<component name="empadd" class="mypack.Address">
+<property name="city"></property>
+<property name="state"></property>
+<property name="pincode"></property>
+</component>
+</class>
+ </hibernate-mapping>
