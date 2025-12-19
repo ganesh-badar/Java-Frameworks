@@ -1,7 +1,7 @@
-# Hibernate ORM – Beginner Project
+# Hibernate
 
 ## 📌 Overview
-This project demonstrates the **basic usage of Hibernate ORM** to perform
+ demonstrates the **basic usage of Hibernate ORM** to perform
 database operations using Java objects instead of writing SQL queries manually.
 
 Hibernate is an **ORM (Object Relational Mapping)** framework that maps
