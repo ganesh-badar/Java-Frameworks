@@ -39,7 +39,7 @@ This folder includes:
 - Hibernate  
 - MySQL  
 - HQL  
-- Maven / JDBC (as required)
+
 
 ---
 
