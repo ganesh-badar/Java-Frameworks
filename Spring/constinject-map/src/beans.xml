@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        
+        <bean id="quis" class="mypack.Question">
+        <constructor-arg value="1"></constructor-arg>
+        <constructor-arg value="What is c"></constructor-arg>
+        <constructor-arg>
+        <map>
+        <entry key ="middle level programin lang" value ="Shreyash"></entry>
+        <entry key="low level lang" value="Shiv"></entry>
+        
+        </map>
+        </constructor-arg>
+        
+        
+        </bean>
+        
+        </beans>
