@@ -1,97 +1,94 @@
-# Hibernate
+Java Frameworks 🚀
 
-## 📌 Overview
- demonstrates the **basic usage of Hibernate ORM** to perform
-database operations using Java objects instead of writing SQL queries manually.
+This repository contains practice projects and examples for popular Java backend frameworks.
+It is created for learning, hands-on practice, and interview preparation.
 
-Hibernate is an **ORM (Object Relational Mapping)** framework that maps
-Java classes to database tables and Java objects to table records.
+📌 Technologies Covered
 
----
-
-## 🛠 Technologies Used
-- Java (Core Java)
-- Hibernate ORM
-- MySQL Database
-- JDBC Driver
-
----
+Java (Core + Advanced)
+Spring Framework
+Spring JDBC
+NamedParameterJdbcTemplate
+Hibernate (ORM)
+MySQL Database
+Maven
 
 
-## 🔍 Key Concepts Covered
-- ORM (Object Relational Mapping)
-- Hibernate Configuration
-- Entity Mapping using Annotations
-- Session and SessionFactory
-- Transaction Management
-- Basic CRUD Operations
 
----
-
-## 🧩 Hibernate Configuration
-Hibernate is configured using the `hibernate.cfg.xml` file, which includes:
-- Database connection details
-- Hibernate dialect
-- Entity class mapping
-Hibernate automatically generates SQL queries based on Java entity classes.
-
----
-
-## 🧑‍💻 Entity Class Example
-```java
-@Entity
-@Table(name = "student")
-public class Student {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-
-    private String name;
-    private String city;
-}
-
-🔄 CRUD Operations
-
-Hibernate provides methods such as:
-save() → Insert data
-get() → Fetch data
-update() → Update data
-delete() → Delete data
-These operations are executed using Session and Transaction.
-
-▶ How the Application Works
-Hibernate reads hibernate.cfg.xml
-SessionFactory is created
-Session is opened
-Transaction begins
-CRUD operation is performed
-Transaction is committed
-Session is closed
-
-🎯 Advantages of Hibernate
-Reduces boilerplate JDBC code
-Database independent
-Automatic table mapping
-Easy CRUD operations
-Improves productivity
-
-⚠ Limitations
-Requires proper configuration
-More complex for beginners compared to JDBC
-Performance tuning needed for large applications
+📂 Project Structure
+Java-Frameworks/
+│
+├── Spring/
+│   ├── Spring JDBC examples
+│   ├── NamedParameterJdbcTemplate CRUD
+│   └── Java-based configuration
+│
+├── Hibernate/
+│   ├── Hibernate configuration
+│   ├── Entity mapping
+│   └── CRUD operations
+│
+├── pom.xml
+└── README.md
 
 
-📌 Conclusion
-This project helps in understanding Hibernate fundamentals
-and how Java objects interact with relational databases using ORM.
+🎯 Purpose of This Repository
+Learn Spring and Hibernate step by step
+Understand Java + Database integration
+Practice CRUD operations
+Prepare for Java backend interviews
+Build a strong foundation for Spring Boot
 
-Hibernate is commonly used with Spring / Spring Boot in real-world applications.
 
-👤 Author
+
+🛠️ Prerequisites
+Before running the projects, make sure you have:
+Java JDK 8 or higher
+MySQL Server
+Maven
+
+IDE: Eclipse / IntelliJ IDEA
+
+⚙️ Database Setup
+Create a MySQL database:
+CREATE DATABASE springdb;
+
+Example table used:
+CREATE TABLE student (
+    std_roll INT PRIMARY KEY,
+    std_name VARCHAR(50),
+    std_marks DECIMAL(5,2)
+);
+
+▶️ How to Run
+Clone the repository:
+git clone https://github.com/ganesh-badar/Java-Frameworks.git
+Open the project in your IDE
+Update database credentials in:
+SpringConfigFile.java
+Run the App.java class
+
+
+📌 Concepts Practiced
+Dependency Injection (DI)
+Java-based Spring Configuration
+JDBC vs NamedParameterJdbcTemplate
+SQL with named parameters
+Hibernate entity mapping
+Exception handling in Spring JDBC
+
+📈 Future Improvements
+Convert projects to Spring Boot
+Add REST APIs
+Add DTOs and Services layer
+Add Unit Testing
+Add Swagger documentation
+
+👨‍💻 Author
 Ganesh Badar
-Java Developer | Hibernate | Backend Development
----
+Java Backend Developer (Learner)
+GitHub: https://github.com/ganesh-badar
 
+⭐ If You Find This Useful
 
-
+Give this repository a ⭐ to support learning!
