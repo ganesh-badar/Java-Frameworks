@@ -15,7 +15,7 @@ public class SprinConfig
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		
 		dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-		dataSource.setUrl("jdbc:mysql://localhost:3306/springdb");
+		dataSource.setUrl("jdbc:mysql://localhost:3306/springdb?useSSL=false");
 		dataSource.setUsername("root");
 		dataSource.setPassword("Ganesh@1351");
 		
